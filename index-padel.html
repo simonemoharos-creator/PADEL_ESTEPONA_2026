@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Trophy Sports Estate · Estepona — The Ideal Padel Destination</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#F9F3E8;--parch:#EFE3CC;--sand:#D9C4A0;--sandl:#EDD9B8;
+  --stone:#B8A882;--terra:#A0522D;--terral:#C4693A;--terrak:#7A3A1A;
+  --olive:#6B7C4A;--olivel:#8A9E5E;--olivek:#4A5830;
+  --gold:#C8962A;--goldl:#E0B84A;--goldk:#9A6E10;
+  --td:#2A1E0A;--tm:#5A4A2A;--tl:#8A7A5A;
+}
+*{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
+body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--td);overflow-x:hidden;}
+/* GATE */
+#gate.hidden{opacity:0;visibility:hidden;pointer-events:none;}
+.gl{font-size:.68rem;letter-spacing:.45em;color:var(--goldl);text-transform:uppercase;margin-bottom:.6rem;}
+.gt{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,4.5vw,2.8rem);color:var(--cream);font-weight:300;line-height:1.15;margin-bottom:.3rem;}
+.gt strong{font-weight:400;color:var(--goldl);}
+.gs{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--sand);font-size:.95rem;margin-bottom:2.2rem;font-weight:300;}
+.gdiv{width:44px;height:1px;background:var(--gold);margin:0 auto 2rem;}
+.glbl{font-size:.6rem;letter-spacing:.3em;color:var(--sand);text-transform:uppercase;display:block;margin-bottom:.7rem;}
+.giw{display:flex;max-width:320px;margin:0 auto .7rem;}
+.gin{flex:1;padding:.9rem 1.2rem;background:rgba(255,255,255,.07);border:1px solid rgba(200,150,42,.4);border-right:none;color:var(--cream);font-family:'Jost',sans-serif;font-size:.9rem;letter-spacing:.25em;outline:none;transition:border-color .3s;}
+.gin::placeholder{color:rgba(249,243,232,.2);}
+.gin:focus{border-color:var(--goldl);}
+.gbtn{padding:.9rem 1.6rem;background:var(--gold);border:none;color:var(--olivek);font-family:'Jost',sans-serif;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;cursor:pointer;font-weight:600;transition:background .25s;}
+.gbtn:hover{background:var(--goldl);}
+.gerr{color:#e8c090;font-size:.76rem;min-height:1.2em;margin-top:.3rem;}
+.gnote{margin-top:2rem;font-size:.6rem;color:rgba(249,243,232,.2);letter-spacing:.1em;line-height:1.8;}
+#main{opacity:1;visibility:visible;}
+#main.visible{opacity:1;}
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 4rem;display:flex;justify-content:space-between;align-items:center;background:rgba(249,243,232,1);backdrop-filter:blur(6px);box-shadow:0 1px 12px rgba(74,88,48,0.1);}
+.nlogo{font-family:'Cormorant Garamond',serif;font-size:.88rem;font-weight:400;letter-spacing:.12em;color:var(--tm);text-transform:uppercase;line-height:1.3;}
+.nlogo em{font-style:italic;color:var(--gold);}
+.nlogo span{color:var(--tm);font-size:.58rem;letter-spacing:.22em;}
+.nlinks{display:flex;gap:1.8rem;list-style:none;}
+.nlinks a{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--tm);text-decoration:none;transition:color .3s;}
+.nlinks a:hover{color:var(--terra);}
+/* HERO */
+.hero{position:relative;overflow:hidden;}
+.hc{position:relative;z-index:2;max-width:780px;animation:fadeup 1.2s ease .4s both;}
+@keyframes fadeup{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:translateY(0)}}
+.htag{font-size:.62rem;letter-spacing:.42em;color:var(--goldl);text-transform:uppercase;margin-bottom:1.6rem;display:flex;align-items:center;gap:.9rem;}
+.htag::before{content:'';width:36px;height:1px;background:var(--goldl);}
+.htitle{font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,6vw,4.8rem);color:var(--cream);font-weight:300;line-height:1.02;margin-bottom:1rem;}
+.htitle em{font-style:italic;color:var(--goldl);}
+.hsubt{font-family:'Cormorant Garamond',serif;font-size:clamp(1rem,2vw,1.35rem);color:rgba(249,243,232,.7);font-weight:300;font-style:italic;margin-bottom:1.8rem;line-height:1.5;max-width:640px;}
+.hline{width:60px;height:1px;background:linear-gradient(to right,var(--gold),transparent);margin-bottom:1.8rem;}
+.hdesc{font-size:.88rem;color:rgba(249,243,232,.72);line-height:1.9;max-width:520px;margin-bottom:2.4rem;font-weight:300;}
+.hbadges{display:flex;gap:1rem;flex-wrap:wrap;align-items:center;}
+.hprice{display:inline-flex;align-items:baseline;gap:.6rem;padding:1rem 2rem;border:1px solid rgba(200,150,42,.5);background:rgba(249,243,232,.05);backdrop-filter:blur(8px);}
+.hprl{font-size:.58rem;letter-spacing:.3em;color:var(--gold);text-transform:uppercase;}
+.hprv{font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--cream);font-weight:300;}
+.hbadge{padding:.45rem 1rem;border:1px solid rgba(107,124,74,.5);background:rgba(74,88,48,.28);font-size:.58rem;letter-spacing:.18em;color:rgba(249,243,232,.72);text-transform:uppercase;}
+.hbadge.gold{border-color:rgba(200,150,42,.5);background:rgba(200,150,42,.1);color:var(--goldl);}
+/* TROPHY STRIP */
+.trophy{background:var(--gold);padding:1.1rem 4rem;display:flex;gap:3rem;align-items:center;overflow:hidden;}
+.trophy-item{display:flex;align-items:center;gap:.7rem;white-space:nowrap;}
+.trophy-item span{font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--olivek);font-weight:500;}
+.trophy-item::before{content:'◆';font-size:.4rem;color:var(--olivek);opacity:.5;}
+.trophy-sep{flex:1;height:1px;background:rgba(74,88,48,.3);}
+/* NARRATIVE SECTION */
+.narrative{background:var(--olivek);padding:9rem 4rem;position:relative;overflow:hidden;}
+.narrative::before{content:'TROPHY ASSET';position:absolute;left:-1rem;top:50%;transform:translateY(-50%);font-family:'Cormorant Garamond',serif;font-size:10rem;font-weight:300;color:rgba(255,255,255,.03);letter-spacing:.15em;pointer-events:none;white-space:nowrap;}
+.narr-inner{display:grid;grid-template-columns:1fr 1.1fr;gap:7rem;align-items:center;position:relative;}
+.narr-left .slbl{color:var(--goldl);}
+.narr-left .stitle{color:var(--cream);}
+.narr-left .stitle em{color:var(--goldl);}
+.narr-text p{font-size:1rem;line-height:2;color:rgba(249,243,232,.82);margin-bottom:1.4rem;font-weight:300;}
+.narr-text p strong{color:var(--goldl);font-weight:400;}
+.narr-right{display:flex;flex-direction:column;gap:1.5rem;}
+.ksp{display:flex;gap:1.2rem;align-items:flex-start;padding:1.4rem 1.6rem;border:1px solid rgba(200,150,42,.18);background:rgba(249,243,232,.04);transition:border-color .3s,background .3s;}
+.ksp:hover{border-color:rgba(200,150,42,.4);background:rgba(249,243,232,.07);}
+.ksp-icon{font-size:1.4rem;flex-shrink:0;margin-top:.1rem;}
+.ksp-body h4{font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:var(--goldl);font-weight:400;margin-bottom:.3rem;}
+.ksp-body p{font-size:.8rem;line-height:1.7;color:rgba(249,243,232,.62);font-weight:300;}
+/* DRONES */
+.drones{background:var(--terrak);}
+.dgrid{display:grid;grid-template-columns:1fr 1fr 1fr;height:66vh;}
+.ditem{overflow:hidden;position:relative;}
+.ditem img{width:100%;height:100%;object-fit:cover;transition:transform .8s,filter .5s;filter:brightness(.85);}
+.ditem:hover img{transform:scale(1.04);filter:brightness(1);}
+.dlbl{position:absolute;bottom:1rem;left:1rem;background:rgba(42,30,10,.85);color:var(--cream);padding:.35rem .85rem;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;backdrop-filter:blur(4px);}
+.dbar{background:var(--terra);padding:1.1rem 4rem;display:flex;justify-content:space-between;align-items:center;}
+.dbar p{font-size:.65rem;letter-spacing:.2em;color:rgba(249,243,232,.55);text-transform:uppercase;}
+.dbar strong{font-family:'Cormorant Garamond',serif;font-size:.95rem;color:var(--goldl);letter-spacing:.1em;font-weight:400;}
+/* KEY FACTS */
+.kfacts{background:var(--olivek);padding:0 4rem 5rem;}
+.kfacts-head{text-align:center;padding:4rem 0 3rem;border-bottom:1px solid rgba(200,150,42,.15);margin-bottom:3rem;}
+.kfacts-head p{font-size:.7rem;letter-spacing:.3em;color:var(--gold);text-transform:uppercase;margin-bottom:.5rem;}
+.kfacts-head h3{font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:var(--cream);font-weight:300;}
+.fgrid{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid rgba(200,150,42,.18);}
+.fitem{padding:2rem 1.6rem;border-right:1px solid rgba(200,150,42,.12);border-bottom:1px solid rgba(200,150,42,.12);}
+.fitem:nth-child(4n){border-right:none;}
+.fnum{font-family:'Cormorant Garamond',serif;font-size:2.1rem;color:var(--gold);font-weight:300;margin-bottom:.3rem;line-height:1;}
+.flbl{font-size:.58rem;letter-spacing:.16em;color:rgba(249,243,232,.48);text-transform:uppercase;line-height:1.7;}
+/* COMMON */
+.slbl{font-size:.58rem;letter-spacing:.4em;color:var(--gold);text-transform:uppercase;margin-bottom:.8rem;display:flex;align-items:center;gap:.8rem;}
+.slbl::before{content:'';width:24px;height:1px;background:var(--gold);}
+.stitle{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.2vw,2.8rem);font-weight:300;line-height:1.1;color:var(--olivek);margin-bottom:1.4rem;}
+.stitle em{font-style:italic;color:var(--terra);}
+/* STORY SECTION */
+.story{background:var(--cream);padding:9rem 4rem;max-width:860px;margin:0 auto;}
+.story-text p{font-size:.95rem;line-height:2;color:var(--tm);margin-bottom:1.4rem;font-weight:300;}
+.story-text p strong{color:var(--olivek);font-weight:500;}
+.story-text blockquote{border-left:2px solid var(--gold);padding-left:1.5rem;margin:2rem 0;font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-style:italic;color:var(--olivek);line-height:1.6;font-weight:300;}
+.astats{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin-top:2.5rem;padding-top:2.5rem;border-top:1px solid var(--sand);}
+.snum{font-family:'Cormorant Garamond',serif;font-size:2.2rem;color:var(--olive);font-weight:300;line-height:1;}
+.slabel{font-size:.58rem;letter-spacing:.2em;color:var(--tl);text-transform:uppercase;margin-top:.2rem;}
+.acap{background:var(--olivek);color:var(--cream);padding:1rem 1.5rem;font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;line-height:1.9;}
+/* IREP SECTION */
+.irep{background:var(--parch);padding:7rem 4rem;text-align:center;}
+.irep-inner{max-width:800px;margin:0 auto;}
+.irep .slbl{justify-content:center;}
+.irep .slbl::before{display:none;}
+.irep .stitle{color:var(--olivek);}
+.irep-text{font-size:1rem;line-height:1.9;color:var(--tm);font-weight:300;margin:1.2rem 0 3rem;}
+.irep-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--sand);border:1px solid var(--sand);}
+.irep-item{background:var(--cream);padding:2rem 1.5rem;text-align:left;}
+.irep-num{font-family:'Cormorant Garamond',serif;font-size:2.5rem;color:var(--gold);font-weight:300;line-height:1;margin-bottom:.4rem;}
+.irep-lbl{font-size:.62rem;letter-spacing:.2em;color:var(--tl);text-transform:uppercase;margin-bottom:.6rem;}
+.irep-desc{font-size:.8rem;line-height:1.7;color:var(--tm);font-weight:300;}
+/* FACILITIES */
+.facs{background:var(--cream);padding:9rem 4rem;}
+.fhead{text-align:center;max-width:600px;margin:0 auto 4.5rem;}
+.fhead .slbl{justify-content:center;}
+.fhead .slbl::before{display:none;}
+.fhead p{font-size:.9rem;line-height:1.8;color:var(--tm);font-weight:300;margin-top:.8rem;}
+.facgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;}
+.fcard{background:var(--parch);overflow:hidden;transition:transform .3s,box-shadow .3s;}
+.fcard:hover{transform:translateY(-5px);box-shadow:0 20px 50px rgba(107,124,74,.14);}
+.fcard-bar{height:2px;background:linear-gradient(to right,var(--terra),var(--gold),var(--olive));}
+.fcard-img{height:195px;overflow:hidden;}
+.fcard-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s;}
+.fcard:hover .fcard-img img{transform:scale(1.05);}
+.fcard-body{padding:1.6rem 1.6rem 2rem;}
+.ftitle{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--olivek);margin-bottom:.6rem;font-weight:400;}
+.fdesc{font-size:.8rem;line-height:1.8;color:var(--tm);font-weight:300;}
+/* SPACES */
+.spaces{background:var(--parch);padding:9rem 4rem;}
+.sgrid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;margin-top:4rem;}
+.scard-img{overflow:hidden;height:275px;}
+.scard-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s;}
+.scard:hover .scard-img img{transform:scale(1.04);}
+.scard-body{padding:1.8rem 0 1.2rem;border-bottom:1px solid var(--sand);}
+.scard-body h3{font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--olivek);font-weight:400;margin-bottom:.6rem;}
+.scard-body p{font-size:.82rem;line-height:1.85;color:var(--tm);font-weight:300;}
+.stag{display:inline-block;padding:.25rem .72rem;background:var(--cream);border:1px solid var(--sand);font-size:.58rem;letter-spacing:.18em;color:var(--tm);text-transform:uppercase;margin-top:.7rem;margin-right:.4rem;}
+/* VISION SECTION */
+.vision{background:var(--terra);padding:9rem 4rem;position:relative;overflow:hidden;}
+.vision::after{content:'VISION';position:absolute;right:-2rem;top:50%;transform:translateY(-50%) rotate(90deg);font-family:'Cormorant Garamond',serif;font-size:10rem;color:rgba(255,255,255,.05);pointer-events:none;white-space:nowrap;}
+.vis-inner{max-width:860px;margin:0 auto;position:relative;}
+.vision .slbl{color:var(--goldl);}
+.vision .stitle{color:var(--cream);}
+.vision .stitle em{color:var(--goldl);}
+.vis-text p{font-size:.95rem;line-height:2;color:rgba(249,243,232,.85);margin-bottom:1.3rem;font-weight:300;}
+.vis-text p strong{color:var(--goldl);font-weight:400;}
+.vis-pts{list-style:none;margin-top:2rem;display:grid;grid-template-columns:1fr 1fr;gap:.5rem 1.5rem;}
+.vis-pts li{display:flex;align-items:flex-start;gap:.7rem;padding:.6rem 0;border-bottom:1px solid rgba(249,243,232,.1);font-size:.82rem;color:rgba(249,243,232,.82);font-weight:300;}
+.vis-pts li::before{content:'◆';color:var(--goldl);font-size:.38rem;margin-top:.44rem;flex-shrink:0;}
+.vis-img img{width:100%;height:auto;display:block;filter:brightness(.9);}
+/* LOCATION */
+.location{background:var(--cream);padding:9rem 4rem;display:grid;grid-template-columns:1fr 1fr;gap:7rem;align-items:start;}
+.lmap{overflow:hidden;border:1px solid var(--sand);}
+.lmap iframe{width:100%;height:400px;border:none;filter:sepia(18%) saturate(72%) hue-rotate(5deg);}
+.ltext p{font-size:.92rem;line-height:1.9;color:var(--tm);margin-bottom:1.3rem;font-weight:300;}
+.ltext blockquote{border-left:2px solid var(--gold);padding-left:1.2rem;margin:1.5rem 0;font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:var(--olivek);line-height:1.6;}
+.drow{display:flex;justify-content:space-between;align-items:center;padding:.8rem 0;border-bottom:1px solid var(--sand);font-size:.82rem;}
+.dname{color:var(--tm);}
+.dval{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--olive);}
+/* CONCIERGE */
+.conc{background:var(--parch);padding:9rem 4rem;text-align:center;}
+.chead{max-width:600px;margin:0 auto 3rem;}
+.chead .slbl{justify-content:center;}
+.chead .slbl::before{display:none;}
+.chead p{font-size:.92rem;line-height:1.85;color:var(--tm);font-weight:300;margin-top:.8rem;}
+.langs{display:flex;justify-content:center;gap:.4rem;margin-bottom:2rem;flex-wrap:wrap;}
+.lbtn{padding:.4rem .95rem;border:1px solid var(--sand);background:transparent;font-family:'Jost',sans-serif;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--tm);cursor:pointer;transition:all .25s;}
+.lbtn.active,.lbtn:hover{background:var(--olive);border-color:var(--olive);color:var(--cream);}
+.chat{max-width:760px;margin:0 auto;background:var(--cream);border:1px solid var(--sand);text-align:left;box-shadow:0 20px 64px rgba(107,124,74,.1);}
+.chdr{padding:1.3rem 1.8rem;background:var(--olivek);display:flex;align-items:center;gap:.9rem;}
+.cav{width:36px;height:36px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;}
+.cinfo h4{font-family:'Cormorant Garamond',serif;color:var(--cream);font-size:.95rem;font-weight:400;}
+.cinfo span{font-size:.58rem;color:var(--goldl);letter-spacing:.18em;text-transform:uppercase;}
+.cst{width:7px;height:7px;background:#90c870;border-radius:50%;margin-left:auto;animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.qqs{padding:.9rem 1.6rem;display:flex;flex-wrap:wrap;gap:.4rem;border-bottom:1px solid var(--parch);}
+.qq{padding:.32rem .75rem;border:1px solid var(--sand);background:transparent;font-family:'Jost',sans-serif;font-size:.66rem;color:var(--tm);cursor:pointer;transition:all .2s;font-weight:300;text-align:left;}
+.qq:hover{background:var(--parch);border-color:var(--olive);color:var(--olivek);}
+.msgs{padding:1.6rem;min-height:260px;max-height:380px;overflow-y:auto;display:flex;flex-direction:column;gap:1rem;}
+.msgs::-webkit-scrollbar{width:3px;}
+.msgs::-webkit-scrollbar-thumb{background:var(--sand);}
+.msg{display:flex;gap:.7rem;animation:msgIn .3s ease;}
+@keyframes msgIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.msg.user{flex-direction:row-reverse;}
+.mb{max-width:76%;padding:.9rem 1.1rem;font-size:.84rem;line-height:1.75;font-weight:300;}
+.msg.ai .mb{background:var(--parch);color:var(--td);border-radius:0 8px 8px 8px;}
+.msg.user .mb{background:var(--olive);color:var(--cream);border-radius:8px 0 8px 8px;}
+.mic{width:28px;height:28px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:.82rem;}
+.msg.ai .mic{background:var(--gold);}
+.msg.user .mic{background:var(--terra);}
+.typ{display:flex;gap:4px;padding:.7rem .9rem;background:var(--parch);border-radius:0 8px 8px 8px;width:fit-content;}
+.typ span{width:5px;height:5px;background:var(--olive);border-radius:50%;animation:t 1.2s infinite;}
+.typ span:nth-child(2){animation-delay:.2s}.typ span:nth-child(3){animation-delay:.4s}
+@keyframes t{0%,60%,100%{transform:translateY(0);opacity:.4}30%{transform:translateY(-5px);opacity:1}}
+.cia{padding:1.2rem 1.6rem;border-top:1px solid var(--sand);display:flex;gap:.7rem;}
+.ci{flex:1;padding:.8rem 1rem;border:1px solid var(--sand);background:var(--cream);font-family:'Jost',sans-serif;font-size:.84rem;color:var(--td);outline:none;transition:border-color .3s;font-weight:300;resize:none;}
+.ci:focus{border-color:var(--olive);}
+.csend{padding:.8rem 1.5rem;background:var(--olive);border:none;color:var(--cream);font-family:'Jost',sans-serif;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;cursor:pointer;transition:background .3s;}
+.csend:hover{background:var(--olivek);}
+.csend:disabled{opacity:.4;cursor:not-allowed;}
+/* CONTACT */
+.contact{background:var(--olivek);padding:9rem 4rem;}
+.cinn{display:grid;grid-template-columns:1fr 1fr;gap:7rem;align-items:start;}
+.ci2 .slbl{color:var(--goldl);}
+.ci2 .stitle{color:var(--cream);}
+.ci2 .stitle em{color:var(--goldl);}
+.ci2 p{font-size:.88rem;line-height:1.9;color:rgba(249,243,232,.65);margin-top:1.2rem;font-weight:300;}
+.ci2 blockquote{border-left:2px solid var(--gold);padding-left:1.2rem;margin:1.8rem 0;font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:rgba(249,243,232,.8);line-height:1.6;}
+.cform{display:flex;flex-direction:column;gap:.9rem;}
+.fg{display:flex;flex-direction:column;gap:.3rem;}
+.fg label{font-size:.58rem;letter-spacing:.24em;color:var(--goldl);text-transform:uppercase;}
+.fg input,.fg select,.fg textarea{padding:.82rem 1rem;background:rgba(255,255,255,.05);border:1px solid rgba(200,150,42,.25);color:var(--cream);font-family:'Jost',sans-serif;font-size:.84rem;outline:none;transition:border-color .3s;font-weight:300;}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--goldl);}
+.fg select option{background:var(--olivek);}
+.fg textarea{resize:vertical;min-height:75px;}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;}
+.fsub{padding:1rem 2.2rem;background:var(--gold);border:none;color:var(--olivek);font-family:'Jost',sans-serif;font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;cursor:pointer;transition:all .3s;font-weight:600;align-self:flex-start;margin-top:.4rem;}
+.fsub:hover{background:var(--goldl);transform:translateY(-2px);}
+.fnote{font-size:.65rem;color:rgba(249,243,232,.25);letter-spacing:.06em;line-height:1.8;}
+.suc{display:none;padding:1rem;background:rgba(200,150,42,.14);border:1px solid var(--gold);color:var(--cream);font-size:.82rem;text-align:center;}
+footer{background:#1A2008;padding:2.2rem 4rem;display:flex;justify-content:space-between;align-items:center;}
+.flogo{font-family:'Cormorant Garamond',serif;font-size:.88rem;color:var(--sand);letter-spacing:.12em;}
+.fnot{font-size:.58rem;color:rgba(217,196,160,.22);letter-spacing:.1em;text-align:center;line-height:1.9;}
+.fconf{font-size:.58rem;color:var(--gold);letter-spacing:.18em;text-transform:uppercase;}
+/* HAMBURGER */
+.hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;cursor:pointer;padding:8px;background:none;border:none;z-index:200;}
+.hamburger span{width:22px;height:1.5px;background:var(--olivek);transition:all .3s;display:block;}
+.hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);}
+.hamburger.open span:nth-child(2){opacity:0;}
+.hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);}
+.mobile-nav{display:none;position:fixed;inset:0;background:var(--cream);z-index:150;flex-direction:column;align-items:center;justify-content:center;gap:2.8rem;}
+.mobile-nav.open{display:flex;}
+.mobile-nav a{font-size:.9rem;letter-spacing:.25em;text-transform:uppercase;color:var(--olivek);text-decoration:none;font-family:'Jost',sans-serif;}
+.mobile-nav a:hover{color:var(--terra);}
+@media(max-width:1100px){
+  nav{padding:1.2rem 2rem;}.nlinks{gap:1.2rem;}
+  .narr-inner,.story,.vis-inner,.location,.cinn{grid-template-columns:1fr;gap:3.5rem;}
+  .facgrid{grid-template-columns:1fr 1fr;}.fgrid{grid-template-columns:repeat(2,1fr);}
+  .dgrid{grid-template-columns:1fr 1fr;height:48vh;}.sgrid{grid-template-columns:1fr;}
+  .irep-grid{grid-template-columns:1fr 1fr;}
+  .vis-pts{grid-template-columns:1fr;}
+  section,div.hero,div.trophy,div.narrative,div.story,div.facs,div.spaces,div.vision,div.location,div.conc,div.contact,div.irep,div.kfacts,div.drones{padding-left:2rem !important;padding-right:2rem !important;}
+}
+@media(max-width:640px){
+  .nlinks{display:none;}
+  .hamburger{display:flex;}
+  .facgrid{grid-template-columns:1fr;}
+  .frow{grid-template-columns:1fr;}
+  footer{flex-direction:column;gap:.9rem;text-align:center;}
+  .dgrid{grid-template-columns:1fr;}.ditem{height:55vw;}
+  .fgrid{grid-template-columns:1fr 1fr;}
+  .irep-grid{grid-template-columns:1fr;}
+  .trophy{gap:1.5rem;padding:1rem 2rem;}
+  .hero{padding-top:5rem;}
+  .cinn,.conc{padding-left:1.2rem !important;padding-right:1.2rem !important;}
+  .qi-grid{grid-template-columns:1fr;}
+  .hprs{grid-template-columns:1fr 1fr;}
+}
+</style>
+</head>
+<body>
+<div id="pw-gate" style="position:fixed;inset:0;z-index:9999;background:#F9F3E8;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'Jost',sans-serif;">
+  <div style="text-align:center;padding:2rem 1.5rem;max-width:480px;width:100%;">
+    <div style="font-size:.65rem;letter-spacing:.35em;color:#4A5830;margin-bottom:1.5rem;text-transform:uppercase;">Private Access &middot; Confidential</div>
+    <div style="font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:300;color:#4A5830;margin-bottom:.3rem;line-height:1.1;">Estepona <em style="color:#C8962A;font-style:italic;">Trophy Estate</em></div>
+    <div style="font-size:.6rem;letter-spacing:.25em;color:#999;margin-bottom:3rem;text-transform:uppercase;">Trophy Asset &middot; Exclusive Listing</div>
+    <div style="display:flex;gap:0;justify-content:center;margin-bottom:.8rem;border:1px solid #C8962A;">
+      <input id="pw-input" type="password" placeholder="Enter access code" autocomplete="off" style="padding:.85rem 1.2rem;background:transparent;border:none;font-family:'Jost',sans-serif;font-size:.85rem;letter-spacing:.12em;color:#4A5830;outline:none;flex:1;min-width:0;">
+      <button onclick="checkPW()" style="padding:.85rem 1.6rem;background:#4A5830;color:#F9F3E8;border:none;font-family:'Jost',sans-serif;font-size:.7rem;letter-spacing:.2em;cursor:pointer;text-transform:uppercase;white-space:nowrap;">Enter</button>
+    </div>
+    <div id="pw-error" style="color:#A0522D;font-size:.72rem;letter-spacing:.08em;min-height:1.2rem;"></div>
+    <div style="margin-top:2.5rem;font-size:.6rem;letter-spacing:.15em;color:#bbb;text-transform:uppercase;">For enquiries contact Simone Moharos</div>
+  </div>
+</div>
+<script>
+(function(){
+  if(sessionStorage.getItem('eae_auth')=='1'){document.getElementById('pw-gate').style.display='none';}
+  document.addEventListener('keydown',function(e){if(e.key==='Enter')checkPW();});
+})();
+function checkPW(){
+  var v=document.getElementById('pw-input').value;
+  if(v==='YES2026'){
+    sessionStorage.setItem('eae_auth','1');
+    var g=document.getElementById('pw-gate');
+    g.style.transition='opacity .6s';g.style.opacity='0';
+    setTimeout(function(){g.style.display='none';},620);
+  } else {
+    var er=document.getElementById('pw-error');
+    er.textContent='Incorrect access code. Please try again.';
+    document.getElementById('pw-input').value='';
+    document.getElementById('pw-input').focus();
+  }
+}
+</script>
+<div id="main">
+  <nav>
+    <div class="nlogo">Estepona <em>Trophy Estate</em><br><span style="font-size:.55rem;letter-spacing:.25em;color:var(--tl);font-style:normal;">Padel Destination · Exclusive Listing</span></div>
+    <ul class="nlinks">
+      <li><a href="#story">The Asset</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="#facilities">Infrastructure</a></li>
+      <li><a href="#vision">Padel Vision</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+  <nav class="mobile-nav" id="mobile-nav">
+    <a href="#story" onclick="closeMobileNav()">The Asset</a>
+    <a href="#location" onclick="closeMobileNav()">Location</a>
+    <a href="#facilities" onclick="closeMobileNav()">Infrastructure</a>
+    <a href="#vision" onclick="closeMobileNav()">Padel Vision</a>
+    <a href="#contact" onclick="closeMobileNav()">Contact</a>
+  </nav>
+  <!-- HERO -->
+  <div class="hero" style="height:auto;min-height:0;background:var(--olivek);padding:10rem 4rem 7rem;display:flex;flex-direction:column;justify-content:center;">
+    <div class="hc" style="animation:fadeup 1.2s ease .2s both;max-width:800px;">
+      <div class="htag">Estepona · Costa del Sol · Exclusive Listing</div>
+      <h1 class="htitle" style="color:var(--cream);">The Ideal Location<br>for Europe's Next<br><em>Padel Destination</em></h1>
+      <p class="hsubt" style="color:rgba(249,243,232,.75);">77,760 m² of prime land in Estepona — the new Marbella. Already-built sports infrastructure, generous parking, direct N-340 access. A rare opportunity to develop a large padel destination on the most dynamic stretch of the Costa del Sol.</p>
+      <div class="hline"></div>
+      <p class="hdesc" style="color:rgba(249,243,232,.65);">Estepona is becoming the new Marbella: world-class restaurants, beach clubs and high-end developments are transforming the town into one of the most desirable locations on the Costa del Sol. This estate sits in the middle of it — with the scale, location and existing access that could no longer be assembled today.</p>
+      <div class="hbadges">
+        <div class="hprice"><span class="hprl">Asking Price</span><span class="hprv">€ 12.5 M</span></div>
+        <div class="hbadge gold">Trophy Asset</div>
+        <div class="hbadge">Asset Deal</div>
+        <div class="hbadge">77,760 m²</div>
+        <div class="hbadge">Off-Market Only</div>
+      </div>
+    </div>
+  </div>
+  <!-- TROPHY STRIP -->
+  <div class="trophy" style="padding:1.1rem 4rem;display:flex;gap:2.5rem;align-items:center;overflow:hidden;">
+    <div class="trophy-item"><span>Estepona · The New Marbella</span></div>
+    <div class="trophy-sep"></div>
+    <div class="trophy-item"><span>Direct N-340 Access</span></div>
+    <div class="trophy-sep"></div>
+    <div class="trophy-item"><span>Large Parking Already Built</span></div>
+    <div class="trophy-sep"></div>
+    <div class="trophy-item"><span>Sports-Use Planning in Place</span></div>
+    <div class="trophy-sep"></div>
+    <div class="trophy-item"><span>Beach Clubs &amp; Restaurants Nearby</span></div>
+    <div class="trophy-sep"></div>
+    <div class="trophy-item"><span>77,760 m² Total Land</span></div>
+  </div>
+  <!-- NARRATIVE — WHY THIS IS DIFFERENT -->
+  <div class="narrative" style="padding:9rem 4rem;">
+    <div class="narr-inner">
+      <div class="narr-left">
+        <div class="slbl">Strategic Asset</div>
+        <h2 class="stitle">This Is Not<br>a Property Listing.<br><em>This Is a Vision.</em></h2>
+        <div class="narr-text">
+          <p>Assets of this scale and location practically do not come to market in Estepona anymore. For a padel operator, this is a rare opportunity: a fully serviced site with everything in place to develop a major padel destination — without starting from zero.</p>
+          <p>The infrastructure — 19,154 m² of built space, extensive sports facilities, a 1,600-capacity arena, a 180-cover restaurant, large asphalted parking with direct N-340 access — sits on 77,760 m² of prime land in the heart of the new Estepona. <strong>Today, this combination could not be assembled again.</strong> Coastal planning restrictions have closed that door permanently.</p>
+          <p>For a padel company, this means: <strong>no land hunt, no zoning fight, no parking problem, no access issue.</strong> The hard work is already done — what remains is to build the courts, brand the destination, and open the doors.</p>
+        </div>
+      </div>
+      <div class="narr-right">
+        <div class="ksp">
+          <div class="ksp-icon">📍</div>
+          <div class="ksp-body"><h4>Estepona — The New Marbella</h4><p>Estepona has become one of the Costa del Sol's most sought-after destinations: beach clubs, high-end restaurants, new hotels and luxury residential projects are reshaping the town. Property values are climbing fast.</p></div>
+        </div>
+        <div class="ksp">
+          <div class="ksp-icon">🛣️</div>
+          <div class="ksp-body"><h4>Direct N-340 Access</h4><p>Frontage on the N-340 coastal highway. 8 minutes to Estepona centre, 25 minutes to Marbella / Puerto Banús, 70 minutes to Málaga Airport. Effortless access for members and tournament visitors.</p></div>
+        </div>
+        <div class="ksp">
+          <div class="ksp-icon">🅿️</div>
+          <div class="ksp-body"><h4>Parking Already Built</h4><p>Grand asphalted car park already in place — capacity for hundreds of vehicles. The single biggest headache for new sports venues is solved on day one.</p></div>
+        </div>
+        <div class="ksp">
+          <div class="ksp-icon">🏖️</div>
+          <div class="ksp-body"><h4>Lifestyle &amp; Hospitality Around the Corner</h4><p>Surrounded by beach clubs, gourmet restaurants, marinas and 5-star resorts. Members and visiting players step straight into the best lifestyle on the Mediterranean.</p></div>
+        </div>
+        <div class="ksp">
+          <div class="ksp-icon">🏗️</div>
+          <div class="ksp-body"><h4>Infrastructure Already Built</h4><p>19,154 m² of built space. Large indoor arena (1,600 capacity), 180-cover restaurant, residential and support buildings — ready to be repurposed for padel courts, club house, pro shop and academy.</p></div>
+        </div>
+        <div class="ksp">
+          <div class="ksp-icon">🏆</div>
+          <div class="ksp-body"><h4>Impossible to Replicate</h4><p>Today's coastal planning restrictions make this combination of land, zoning, and infrastructure unachievable from scratch on the Costa del Sol. A genuine one-off.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- KEY FACTS -->
+  <div class="kfacts">
+    <div class="kfacts-head">
+      <p>Asset at a Glance</p>
+      <h3>The Numbers Behind the Vision</h3>
+    </div>
+    <div class="fgrid">
+      <div class="fitem"><div class="fnum">77,760</div><div class="flbl">m² Total Land<br>Two Cadastral Plots</div></div>
+      <div class="fitem"><div class="fnum">19,154</div><div class="flbl">m² Built &amp; Covered<br>Existing Infrastructure</div></div>
+      <div class="fitem"><div class="fnum">24×64</div><div class="flbl">m Indoor Arena<br>Padel-Ready Envelope</div></div>
+      <div class="fitem"><div class="fnum">1,600</div><div class="flbl">Spectator Capacity<br>Tournament-Ready</div></div>
+      <div class="fitem"><div class="fnum">180</div><div class="flbl">Covers · Restaurant<br>Future Club House</div></div>
+      <div class="fitem"><div class="fnum">8 min</div><div class="flbl">to Estepona Centre<br>25 min Marbella</div></div>
+      <div class="fitem"><div class="fnum">N-340</div><div class="flbl">Direct Frontage<br>Parking Already Built</div></div>
+      <div class="fitem"><div class="fnum">€12.5M</div><div class="flbl">Asking Price<br>Asset Deal Only</div></div>
+    </div>
+  </div>
+  <!-- THE STORY -->
+  <div class="story" id="story">
+    <div class="story-text">
+      <div class="slbl">The Asset</div>
+      <h2 class="stitle">Decades in the<br>Making. <em>Yours to<br>Reimagine.</em></h2>
+      <p>The estate was originally built as one of the most ambitious sports and events venues in Europe, combining <strong>traditional Andalusian architecture</strong> with large-scale functional infrastructure. The buildings need refurbishment — which is exactly the opportunity: a padel operator can reshape every space from the ground up around the sport, the brand and the member experience.</p>
+      
+      <p>The estate is offered exclusively as an <strong>asset deal</strong> — land, buildings, infrastructure and licences included. The operating company is not part of the transaction, giving the acquirer full flexibility to continue, reinvent or redevelop.</p>
+      <p>Two cadastral plots totalling 77,760 m² with 19,154 m² of covered built space. Sports-use planning classification. Cadastral details disclosed under NDA.</p>
+      <div class="astats">
+        <div><div class="snum">77,760</div><div class="slabel">m² Land Total</div></div>
+        <div><div class="snum">K-DEP</div><div class="slabel">Sports Licence</div></div>
+        <div><div class="snum">Asset</div><div class="slabel">Deal Only</div></div>
+        <div><div class="snum">Off</div><div class="slabel">Market Only</div></div>
+      </div>
+    </div>
+    <div>
+      <div class="acap">Trophy Sports Estate · Estepona · Costa del Sol</div>
+    </div>
+  </div>
+  <!-- IRREPLACEABLE SECTION -->
+  <div class="irep" style="padding:7rem 4rem;">
+    <div class="irep-inner">
+      <div class="slbl" style="justify-content:center;"><span style="font-size:.58rem;letter-spacing:.4em;color:var(--gold);text-transform:uppercase;">Why It Cannot Be Replicated</span></div>
+      <h2 class="stitle" style="margin-bottom:0;">Three Reasons This Asset<br>Is <em>Truly One of a Kind</em></h2>
+      <p class="irep-text">The Costa del Sol has changed. Dramatically. What was possible 20 years ago — assembling this much prime land, this close to the coast, with these planning permissions — is no longer possible today. For any padel operator looking to build a flagship destination on this coast, the question is not "should we build it?" — it is "where can we build it?" The answer is: only here.</p>
+      <div class="irep-grid">
+        <div class="irep-item">
+          <div class="irep-num">01</div>
+          <div class="irep-lbl">Planning Restrictions</div>
+          <p class="irep-desc">Coastal planning laws and environmental protection zones introduced across Andalucía make it legally impossible today to obtain equivalent permissions for a new-build sports estate of this size and proximity to the coast.</p>
+        </div>
+        <div class="irep-item">
+          <div class="irep-num">02</div>
+          <div class="irep-lbl">Land Scarcity</div>
+          <p class="irep-desc">77,760 m² of contiguous, titled land in the Estepona–Marbella corridor simply does not come to market. Land of this scale, this close to the N-340 and the sea, is an extinct asset class on the Costa del Sol.</p>
+        </div>
+        <div class="irep-item">
+          <div class="irep-num">03</div>
+          <div class="irep-lbl">Built Infrastructure Value</div>
+          <p class="irep-desc">The cost to build 19,154 m² of indoor/outdoor sports infrastructure today would far exceed the asking price — before even acquiring the land. The buyer inherits decades of investment at a fraction of replacement cost.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FACILITIES -->
+  <div class="facs" id="facilities">
+    <div class="fhead">
+      <div class="slbl" style="justify-content:center;"><span>World-Class Infrastructure</span></div>
+      <h2 class="stitle">Existing Infrastructure —<br><em>Ready for Padel</em></h2>
+      <p>Every space on the estate has a clear role in a flagship padel destination. Refurbishment is required, but the bones, the licences, the parking and the location are already there.</p>
+    </div>
+    <div class="facgrid">
+      <div class="fcard"><div class="fcard-bar"></div>
+        <div class="fcard-body"><h3 class="ftitle">Indoor Arena → Indoor Padel Courts</h3>
+        <p class="fdesc">24 × 64 m covered arena with high ceilings and 1,600-spectator capacity. The existing lighting and sound systems date from the original operation and would need to be replaced — but the building envelope itself is already in place, climate-protected and well suited to be reconfigured into multiple indoor padel courts plus a show court.</p></div>
+      </div>
+      <div class="fcard"><div class="fcard-bar"></div>
+        <div class="fcard-body"><h3 class="ftitle">77,760 m² Land → Outdoor Courts &amp; Stadium</h3>
+        <p class="fdesc">Vast outdoor grounds suitable for 20+ outdoor padel courts, a centre court / show court for tournaments, a padel stadium and hospitality terraces. Sports-use planning classification already in place.</p></div>
+      </div>
+      <div class="fcard"><div class="fcard-bar"></div>
+        <div class="fcard-body"><h3 class="ftitle">Restaurant (180 covers) → Club House</h3>
+        <p class="fdesc">Existing licensed restaurant with terrace, fireplace and bar — ready to become the heart of the club: members lounge, sponsor hospitality, post-match dining and tournament after-parties.</p></div>
+      </div>
+      <div class="fcard"><div class="fcard-bar"></div>
+        <div class="fcard-body"><h3 class="ftitle">Support Buildings → Pro Shop, Gym &amp; Academy</h3>
+        <p class="fdesc">Multiple existing buildings ideal for conversion into pro shop, gym and recovery centre, academy classrooms, coaching offices, physio rooms and locker facilities. Plug-and-play structures.</p></div>
+      </div>
+      <div class="fcard"><div class="fcard-bar"></div>
+        <div class="fcard-body"><h3 class="ftitle">Residential Buildings → Boutique Stay</h3>
+        <p class="fdesc">Existing staff accommodation and residential structures convert naturally into boutique stay rooms for visiting players, coaches, sponsors and tournament guests. A camp + competition hub from day one.</p></div>
+      </div>
+      <div class="fcard"><div class="fcard-bar"></div>
+        <div class="fcard-body"><h3 class="ftitle">Grand Car Park — Already Built</h3>
+        <p class="fdesc">Asphalted car park with direct N-340 frontage and capacity for hundreds of vehicles. The single biggest planning headache for new sports venues — already solved. Members and tournament visitors arrive effortlessly.</p></div>
+      </div>
+    </div>
+  </div>
+  <!-- SECONDARY REVENUE -->
+  <div class="spaces" style="padding:9rem 4rem;">
+    <div class="slbl">Secondary Revenue Streams</div>
+    <h2 class="stitle">A Padel Destination —<br>Plus an <em>Events Engine</em></h2>
+    <div class="sgrid">
+      <div class="scard">
+        <div class="scard-body"><h3>Padel Tournaments &amp; Pro Events</h3>
+        <p>The 1,600-spectator indoor arena and centre court create the perfect stage for World Padel Tour-style events, exhibitions, sponsor activations and television-ready tournaments. A turnkey home for international padel competition.</p>
+        <span class="stag">1,600 spectators</span><span class="stag">Show court ready</span><span class="stag">Sponsor hospitality</span></div>
+      </div>
+      <div class="scard">
+        <div class="scard-body"><h3>Brand Activations &amp; Launches</h3>
+        <p>The same indoor space doubles as a premium venue for brand launches, sponsor events, fashion presentations and corporate days — generating additional revenue between tournaments without disrupting the core padel operation.</p>
+        <span class="stag">Brand events</span><span class="stag">Up to 1,300 pax</span><span class="stag">Year-round</span></div>
+      </div>
+      <div class="scard">
+        <div class="scard-body"><h3>Restaurant, Bar &amp; Hospitality</h3>
+        <p>The 180-cover licensed restaurant operates as the club house by day and as a destination dining venue by night — open to members, players and the wider Estepona community. A second profit centre on top of court revenue.</p>
+        <span class="stag">180 covers</span><span class="stag">Licensed</span><span class="stag">Members + public</span></div>
+      </div>
+    </div>
+  </div>
+  <!-- LOCATION -->
+  <div class="location" id="location" style="padding:9rem 4rem;">
+    <div>
+    </div>
+    <div class="ltext">
+      <div class="slbl">Location</div>
+      <h2 class="stitle">Estepona —<br>The <em>New Marbella</em></h2>
+      <p>Ctra. Nacional N-340 km 159 · Estepona, Costa del Sol. Positioned between Sierra Bermeja and the Mediterranean — at the heart of Europe's fastest-growing luxury coastal market.</p>
+      <blockquote>"Estepona is no longer Marbella's quieter sister — it has become the most desirable address on the Costa del Sol."</blockquote>
+      <p style="font-size:.95rem;line-height:1.7;color:rgba(74,88,48,.85);margin:1rem 0 1.5rem;">In the past few years Estepona has changed significantly: new beach clubs (Purobeach, Laguna Village, Kempinski Beach), gourmet restaurants, the redeveloped marina, and major residential and hotel projects are reshaping the town. Property values are rising sharply — and there is still no large padel destination on this stretch of coast.</p>
+      <div>
+        <div class="drow"><span class="dname">Estepona Town Centre</span><span class="dval">~8 min</span></div>
+        <div class="drow"><span class="dname">Marbella / Puerto Banús</span><span class="dval">~25 min</span></div>
+        <div class="drow"><span class="dname">Beach &amp; Coastline</span><span class="dval">~5 min</span></div>
+        <div class="drow"><span class="dname">Gibraltar Airport</span><span class="dval">~35 min</span></div>
+        <div class="drow"><span class="dname">Málaga International Airport</span><span class="dval">~70 min</span></div>
+        <div class="drow"><span class="dname">N-340 / AP-7 Access</span><span class="dval">Direct frontage</span></div>
+        <div class="drow"><span class="dname">On-Site Parking</span><span class="dval">Already Built</span></div>
+      </div>
+    </div>
+  </div>
+  <!-- VISION / REDEVELOPMENT -->
+  <div class="vision" id="vision" style="padding:9rem 4rem;">
+    <div class="vis-inner">
+      <div>
+        <div class="slbl">The Padel Vision</div>
+        <h2 class="stitle">The Costa del Sol's<br><em>Flagship Padel Destination</em></h2>
+        <div class="vis-text">
+          <p>Padel has exploded across Europe — and Spain leads the world. Yet on the entire stretch between Marbella and Sotogrande there is no single, large-scale destination padel club combining championship courts, club house, hospitality, academy and tournament infrastructure.</p>
+          <p><strong>This estate is the answer.</strong> The land, the location, the planning, the parking and the buildings are already in place. What remains is to convert the existing arenas into indoor courts, build outdoor courts and a centre court stadium on the surrounding land, and open the Costa del Sol's most ambitious padel destination.</p>
+        </div>
+        <ul class="vis-pts">
+          <li>Indoor padel courts in the existing arena (24×64 m)</li>
+          <li>20+ outdoor courts on the 77,760 m² site</li>
+          <li>Centre court / show court for tournaments</li>
+          <li>Pro shop, gym, fitness &amp; recovery centre</li>
+          <li>Padel academy &amp; coaching school</li>
+          <li>Club house, members lounge &amp; restaurant (180 covers)</li>
+          <li>Hospitality &amp; events space for sponsors and tournaments</li>
+          <li>Boutique stay rooms in existing residential buildings</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  <!-- CONTACT -->
+  <div class="contact" id="contact" style="padding:9rem 4rem;">
+    <div class="cinn">
+      <div class="ci2">
+        <div class="slbl">Private Enquiry</div>
+        <h2 class="stitle">Request a<br><em>Private Site Visit</em></h2>
+        <p>For padel operators, investors and developers serious about this opportunity: contact me directly to arrange a private site visit. All enquiries are handled with absolute discretion under NDA.</p>
+        <blockquote>"The next flagship padel destination on the Costa del Sol starts here."</blockquote>
+        <p style="font-size:.88rem;color:rgba(249,243,232,.8);line-height:2.3;margin-top:.5rem;">
+          📞 <a href="tel:+34681336692" style="color:var(--goldl);text-decoration:none;">+34 681 336 692</a><br>
+          📞 <a href="tel:+4369910042714" style="color:var(--goldl);text-decoration:none;">+43 699 100 42714</a><br>
+          ✉️ <a href="/cdn-cgi/l/email-protection#5122383c3e3f34113c3e3930233e227f323e3c" style="color:var(--goldl);text-decoration:none;"><span class="__cf_email__" data-cfemail="a9dac0c4c6c7cce9c4c6c1c8dbc6da87cac6c4">[email&#160;protected]</span></a><br>
+          👤 Simone Moharos · Real Estate Agent
+      <div>
+        <form class="cform" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contactform">
+          <div class="frow">
+            <div class="fg"><label>First Name</label><input type="text" placeholder="Your first name" required></div>
+            <div class="fg"><label>Last Name</label><input type="text" placeholder="Your last name" required></div>
+          </div>
+          <div class="fg"><label>Email</label><input type="email" placeholder="your@email.com" required></div>
+          <div class="fg"><label>Phone / WhatsApp</label><input type="tel" placeholder="+44 / +49 / +34 / +7..."></div>
+          <div class="fg"><label>Country of Residence</label>
+            <select><option>Select country...</option><option>United Kingdom</option><option>Germany</option><option>Austria</option><option>Switzerland</option><option>Russia / CIS</option><option>UAE / Middle East</option><option>Spain</option><option>France</option><option>Netherlands / Belgium</option><option>USA / Canada</option><option>Other</option></select>
+          </div>
+          <div class="fg"><label>Primary Interest</label>
+            <select><option>Padel Centre / Sports Destination</option><option>Mixed Sports &amp; Hospitality</option><option>Investment / Asset Acquisition</option><option>Hotel / Resort Combined with Sports</option><option>Open — Happy to Discuss</option></select>
+          </div>
+          <div class="fg"><label>Message (Optional)</label><textarea placeholder="Specific questions, requirements or preferred visit dates..."></textarea></div>
+          <p class="fnote">By submitting you confirm your interest in this private off-market opportunity. An NDA will be required prior to detailed financial disclosure.</p>
+          <p style="font-size:.6rem;color:rgba(249,243,232,.2);margin-top:.3rem;">⚙️ <em>To activate email delivery: register at formspree.io with <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="becdd7d3d1d0dbfed3d1d6dfccd1cd90ddd1d3">[email&#160;protected]</a> and replace YOUR_FORM_ID in the code.</em></p>
+          <input type="submit" class="fsub" value="Submit Private Enquiry" style="padding:1rem 2.2rem;background:var(--gold);border:none;color:var(--olivek);font-family:'Jost',sans-serif;font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;cursor:pointer;font-weight:600;align-self:flex-start;margin-top:.4rem;">
+          <div class="suc" id="suc">✓ Thank you. Your enquiry has been received. Simone Moharos will contact you personally within 24 hours.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="flogo">Trophy Sports Estate · Estepona · Costa del Sol</div>
+    <div class="fnot">© 2025 · Strictly Private &amp; Confidential · Not for public distribution<br>Simone Moharos · <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="15667c787a7b7055787a7d74677a663b767a78">[email&#160;protected]</a> · +34 681 336 692 · +43 699 100 42714</div>
+    <div class="fconf">🔒 Off-Market Only</div>
+    <div style="text-align:center;padding:1.5rem;font-size:0.65rem;color:var(--tl,#8A7A5A);letter-spacing:0.08em;line-height:2;border-top:1px solid rgba(139,122,90,0.15);margin-top:1rem;"><p style="margin:0;">Cadastral and registry details disclosed to qualified buyers under NDA.</p></div>
+  </footer>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+</script>
+<script>
+function closeMobileNav(){document.getElementById('mobile-nav').classList.remove('open');document.getElementById('hamburger').classList.remove('open');}
+document.getElementById('hamburger').addEventListener('click',function(){this.classList.toggle('open');document.getElementById('mobile-nav').classList.toggle('open');});
+</script>
+</body>
+</html>
+
